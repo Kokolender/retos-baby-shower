@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retos Baby Shower 🎉</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: linear-gradient(135deg, #fbeaff, #d4f1f9);
+      color: #333;
+      padding: 30px;
+    }
+    .card {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 30px;
+      max-width: 500px;
+      margin: 40px auto;
+    }
+    h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #6a11cb;
+    }
+    #reto {
+      font-size: 22px;
+      font-weight: bold;
+      margin: 20px 0;
+      color: #222;
+    }
+    button {
+      background: linear-gradient(90deg, #6a11cb, #2575fc);
+      color: white;
+      border: none;
+      padding: 15px 25px;
+      font-size: 18px;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>🎲 Tu reto es...</h1>
+    <p id="reto"></p>
+    <button onclick="subirFoto()">📸 Subir mi foto</button>
+  </div>
+
+  <script>
+    const retos = [
+      "Tómate una foto con alguien que tenga gafas 🤓",
+      "Haz una pose graciosa con alguien que no conozcas mucho 😂",
+      "Imita a un famoso con alguien al azar 🎤",
+      "Haz una cara rara con la persona de tu derecha 🙃",
+      "Haz un baile rápido con alguien y tómense una selfie 💃🕺",
+      "Abraza a alguien como si no lo vieras hace años 🤗",
+      "Haz cara de sorpresa con otra persona 😲",
+      "Haz un bigote falso con alguien usando un objeto 🥸",
+      "Tómate una foto con alguien haciendo cara de enojados 😡😂",
+      "Finge que se están peleando por un regalo 🎁"
+    ];
+
+    function mostrarReto() {
+      const randomIndex = Math.floor(Math.random() * retos.length);
+      document.getElementById("reto").innerText = retos[randomIndex];
+    }
+
+    function subirFoto() {
+      window.location.href = "https://photos.app.goo.gl/k7WcJEMQWGuhLVoc8";
+    }
+
+    mostrarReto();
+  </script>
+</body>
+</html>
