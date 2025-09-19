@@ -30,6 +30,7 @@
       font-weight: bold;
       margin: 20px 0;
       color: #222;
+      min-height: 60px;
     }
     button {
       background: linear-gradient(90deg, #6a11cb, #2575fc);
@@ -40,6 +41,7 @@
       border-radius: 12px;
       cursor: pointer;
       transition: 0.3s;
+      margin: 10px;
     }
     button:hover {
       transform: scale(1.05);
@@ -51,6 +53,7 @@
   <div class="card">
     <h1>🎲 Tu reto es...</h1>
     <p id="reto"></p>
+    <button onclick="mostrarReto()">🎲 Nuevo reto</button>
     <button onclick="subirFoto()">📸 Subir mi foto</button>
   </div>
 
@@ -78,7 +81,7 @@
     "Tómate una foto con Sebas Gallego haciendo una mueca épica 🤪",
     "Haz cara de ternura con Álvaro Vargas 🥺",
     "Haz una selfie con Jhon imitando a un influencer 📱✨",
-    "Busca a Geraldine y haz como si estuvieras llorando dramáticamente 😢"
+    "Busca a Geraldine y haz como si estuvieras llorando dramáticamente 😢",
     "Busca a Felipe osorio y hagan una cara de locura 🤪",
     "Haz una foto con Ruby riéndose a carcajadas 😂",
     "Tómate una foto con Eugenio como si fueran campeones de fútbol ⚽🏆",
@@ -92,7 +95,7 @@
     "Busca a Alejandro Londoño y hagan una pose seria de película 🎬",
     "Haz una selfie divertida con Luisa Giraldo con un filtros loco 🤓",
     "Haz una foto con Cristian (El Papá) haciendo una pose de orgullo 💪",
-    "Busca a Balhery (La Mamá) y tómate una foto abrazando la panza con amor 👶❤️"
+    "Busca a Balhery (La Mamá) y tómate una foto abrazando la panza con amor 👶❤️",
     "Busca a Alejandro (El novio de estefania) y tómate una foto en la mesa de dulces ❤️"
   ];
 
@@ -106,4 +109,6 @@
   }
 
   mostrarReto();
-</script>
+  </script>
+</body>
+</html>
