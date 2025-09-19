@@ -55,46 +55,43 @@
   </div>
 
   <script>
-    const retosExtra = [
-  "Haz una pose de modelo junto a Laura 😎",
-  "Tómate una foto abrazando a Doña Luz con mucho cariño 🤗",
-  "Haz cara de sorpresa con Nancy como si hubieran visto algo raro 😱",
-  "Haz una pose de superhéroe con Samuel 🦸",
-  "Tómate una foto divertida con Regina sacando la lengua 😜",
-  "Haz un corazón con las manos junto a Camila ❤️",
-  "Busca a Valentina Garcés y hagan una pose como si fueran famosas en la alfombra roja 🎤✨",
-  "Haz una selfie con Estefanía haciendo cara de susto 👻",
-  "Tómate una foto con Hernán como si fueran dos detectives investigando 🕵️",
-  "Haz cara de ternura con Diana 🥹",
-  "Busca a Alejandro Herrera y posen como si fueran estrellas de rock 🎸",
-  "Haz una foto con Deisy imitando un TikTok famoso 🎶",
-  "Busca a Felipe y hagan una cara de locura 🤪",
-  "Haz una foto con Ruby riéndose a carcajadas 😂",
-  "Tómate una foto con Eugenio como si fueran campeones de fútbol ⚽🏆",
-  "Haz una pose elegante con Gisela como si fueran reyes 👑",
-  "Tómate una foto con Juan haciendo un choque de manos épico ✋🤚",
-  "Haz una selfie con Angely mirando al cielo como si vieran un ovni 👽",
-  "Haz una foto con Harry como si fueran espías secretos 🕶️",
-  "Tómate una foto con Marina posando como en una revista 💃",
-  "Haz una cara graciosa con Emanuel como si contaran un chisme 🤭",
-  "Tómate una foto con María José como si fueran influencers 📱✨",
-  "Busca a Alejandro Londoño y hagan una pose seria de película 🎬",
-  "Haz una selfie divertida con Luisa Giraldo con filtros locos imaginarios 🤓",
-  "Haz una foto con Cristian (El Papá) haciendo una pose de orgullo 💪",
-  "Busca a Balhery (La Mamá) y tómate una foto abrazando la panza con amor 👶❤️"
-];
+  const retosExtra = [
+    "Haz una pose de modelo junto a Laura 😎",
+    "Tómate una foto abrazando a Doña Luz con mucho cariño 🤗",
+    "Haz cara de sorpresa con Nancy como si hubieran visto algo raro 😱",
+    "Haz una pose de superhéroe con Samuel 🦸",
+    "Tómate una foto divertida con Regina sacando la lengua 😜",
+    "Haz un corazón con las manos junto a Camila ❤️",
+    "Busca a Valentina Garcés y hagan una pose como si fueran famosas en la alfombra roja 🎤✨",
+    "Haz una selfie con Estefanía haciendo cara de susto 👻",
+    "Tómate una foto con Hernán como si fueran dos detectives investigando 🕵️",
+    "Haz cara de ternura con Diana 🥹",
+    "Busca a Alejandro Herrera y posen como si fueran estrellas de rock 🎸",
+    "Haz una foto con Deisy imitando un TikTok famoso 🎶",
+    "Busca a Felipe y hagan una cara de locura 🤪",
+    "Haz una foto con Ruby riéndose a carcajadas 😂",
+    "Tómate una foto con Eugenio como si fueran campeones de fútbol ⚽🏆",
+    "Haz una pose elegante con Gisela como si fueran reyes 👑",
+    "Tómate una foto con Juan haciendo un choque de manos épico ✋🤚",
+    "Haz una selfie con Angely mirando al cielo como si vieran un ovni 👽",
+    "Haz una foto con Harry como si fueran espías secretos 🕶️",
+    "Tómate una foto con Marina posando como en una revista 💃",
+    "Haz una cara graciosa con Emanuel como si contaran un chisme 🤭",
+    "Tómate una foto con María José como si fueran influencers 📱✨",
+    "Busca a Alejandro Londoño y hagan una pose seria de película 🎬",
+    "Haz una selfie divertida con Luisa Giraldo con filtros locos imaginarios 🤓",
+    "Haz una foto con Cristian (El Papá) haciendo una pose de orgullo 💪",
+    "Busca a Balhery (La Mamá) y tómate una foto abrazando la panza con amor 👶❤️"
+  ];
 
+  function mostrarReto() {
+    const randomIndex = Math.floor(Math.random() * retosExtra.length);
+    document.getElementById("reto").innerText = retosExtra[randomIndex];
+  }
 
-    function mostrarReto() {
-      const randomIndex = Math.floor(Math.random() * retos.length);
-      document.getElementById("reto").innerText = retos[randomIndex];
-    }
+  function subirFoto() {
+    window.location.href = "https://photos.app.goo.gl/SAjjReQavDQzqtNx6";
+  }
 
-    function subirFoto() {
-      window.location.href = "https://photos.app.goo.gl/SAjjReQavDQzqtNx6";
-    }
-
-    mostrarReto();
-  </script>
-</body>
-</html>
+  mostrarReto();
+</script>
